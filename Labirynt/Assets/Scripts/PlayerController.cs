@@ -24,7 +24,16 @@ public class PlayerController : MonoBehaviour
 
         characterController.Move(move * speed * Time.deltaTime);
 
-        velocity.y += gravity * Time.deltaTime;
-        characterController.Move(velocity);
+         //Debug.Log(velocity.y);
+        //Debug.DrawLine(transform.position, transform.position + Vector3.down * 2.4f);
+        if (!Physics.Raycast(transform.position, Vector3.down, 1.4f))
+        {
+            velocity.y += gravity * Time.deltaTime;
+            characterController.Move(velocity); 
+        }
+        else
+        {
+            velocity.y = 0;
+        }
     }
 }

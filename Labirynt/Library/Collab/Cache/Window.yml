@@ -18,10 +18,12 @@ MonoBehaviour:
     - Assets/Scripts.meta
     - Assets/Scripts/CameraController.cs
     - Assets/Scripts/CameraController.cs.meta
+    - Assets/Scripts/GameManager.cs
+    - Assets/Scripts/GameManager.cs.meta
     - Assets/Scripts/PlayerController.cs
     - Assets/Scripts/PlayerController.cs.meta
     - 
-    m_Values: 01010101010101
+    m_Values: 000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
