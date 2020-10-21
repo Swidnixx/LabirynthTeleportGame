@@ -14,16 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/Materials.meta
+    - Assets/Materials/Fast.mat
+    - Assets/Materials/Fast.mat.meta
+    - Assets/Materials/Slow.mat
+    - Assets/Materials/Slow.mat.meta
     - Assets/Scenes/SampleScene.unity
     - Assets/Scripts.meta
     - Assets/Scripts/CameraController.cs
     - Assets/Scripts/CameraController.cs.meta
     - Assets/Scripts/GameManager.cs
     - Assets/Scripts/GameManager.cs.meta
+    - Assets/Scripts/PickUp.cs
+    - Assets/Scripts/PickUp.cs.meta
     - Assets/Scripts/PlayerController.cs
     - Assets/Scripts/PlayerController.cs.meta
+    - ProjectSettings/TagManager.asset
     - 
-    m_Values: 000000000000000000
+    m_Values: 0000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

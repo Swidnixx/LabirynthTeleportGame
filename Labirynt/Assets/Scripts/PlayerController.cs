@@ -6,6 +6,10 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 12f;
     public float gravity = -10;
+    public Transform groundCheck;
+    public LayerMask groundMask;
+
+    bool isGrounded;
     Vector3 velocity;
     CharacterController characterController;
     // Start is called before the first frame update
@@ -24,16 +28,53 @@ public class PlayerController : MonoBehaviour
 
         characterController.Move(move * speed * Time.deltaTime);
 
-         //Debug.Log(velocity.y);
+
+        isGrounded = Physics.CheckSphere(groundCheck.position, 0.4f, groundMask);
         //Debug.DrawLine(transform.position, transform.position + Vector3.down * 2.4f);
-        if (!Physics.Raycast(transform.position, Vector3.down, 1.4f))
+        if (!isGrounded)
         {
-            velocity.y += gravity * Time.deltaTime;
-            characterController.Move(velocity); 
+            if (velocity.y > gravity)
+            {
+                velocity.y += gravity * Time.deltaTime; 
+            }else
+            {
+                velocity.y = gravity;
+            }
+
+            characterController.Move(velocity * Time.deltaTime); 
         }
         else
         {
             velocity.y = 0;
+        }
+
+        RaycastHit hit;
+        if(Physics.Raycast(groundCheck.position, Vector3.down, out hit, 0.4f, groundMask))
+        {
+            string terrainTag = hit.collider.gameObject.tag;
+            switch(terrainTag)
+            {
+                default:
+                    speed = 12;
+                    break;
+
+                case "Slow":
+                    speed = 3;
+                    break;
+
+                case "Fast":
+                    speed = 20;
+                    break;
+            }
+        }
+    }
+
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if(hit.gameObject.tag == "PickUp")
+        {
+            hit.gameObject.GetComponent<PickUp>().Picked();
         }
     }
 }
