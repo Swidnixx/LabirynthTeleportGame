@@ -19,6 +19,13 @@ MonoBehaviour:
     - Assets/Materials/Fast.mat.meta
     - Assets/Materials/Slow.mat
     - Assets/Materials/Slow.mat.meta
+    - Assets/Prefabs.meta
+    - Assets/Prefabs/Fast.prefab
+    - Assets/Prefabs/Fast.prefab.meta
+    - Assets/Prefabs/Player.prefab
+    - Assets/Prefabs/Player.prefab.meta
+    - Assets/Prefabs/Slow.prefab
+    - Assets/Prefabs/Slow.prefab.meta
     - Assets/Scenes/SampleScene.unity
     - Assets/Scripts.meta
     - Assets/Scripts/CameraController.cs
@@ -29,9 +36,11 @@ MonoBehaviour:
     - Assets/Scripts/PickUp.cs.meta
     - Assets/Scripts/PlayerController.cs
     - Assets/Scripts/PlayerController.cs.meta
+    - Assets/Scripts/PortalTeleport.cs
+    - Assets/Scripts/PortalTeleport.cs.meta
     - ProjectSettings/TagManager.asset
     - 
-    m_Values: 0000000000000000000000000000000000
+    m_Values: 0000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
