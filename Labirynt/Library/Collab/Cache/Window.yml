@@ -17,8 +17,15 @@ MonoBehaviour:
     - Assets/Materials.meta
     - Assets/Materials/Fast.mat
     - Assets/Materials/Fast.mat.meta
+    - Assets/Materials/PortalB.mat
+    - Assets/Materials/PortalB.mat.meta
     - Assets/Materials/Slow.mat
     - Assets/Materials/Slow.mat.meta
+    - Assets/Materials/Textures.meta
+    - Assets/Materials/Textures/TextureA.renderTexture
+    - Assets/Materials/Textures/TextureA.renderTexture.meta
+    - Assets/Materials/Textures/TextureB.renderTexture
+    - Assets/Materials/Textures/TextureB.renderTexture.meta
     - Assets/Prefabs.meta
     - Assets/Prefabs/Fast.prefab
     - Assets/Prefabs/Fast.prefab.meta
@@ -36,11 +43,19 @@ MonoBehaviour:
     - Assets/Scripts/PickUp.cs.meta
     - Assets/Scripts/PlayerController.cs
     - Assets/Scripts/PlayerController.cs.meta
+    - Assets/Scripts/Portal.cs
+    - Assets/Scripts/Portal.cs.meta
+    - Assets/Scripts/PortalCamera.cs
+    - Assets/Scripts/PortalCamera.cs.meta
     - Assets/Scripts/PortalTeleport.cs
     - Assets/Scripts/PortalTeleport.cs.meta
+    - Assets/Shaders.meta
+    - Assets/Shaders/ScreenCutoutShader.shader
+    - Assets/Shaders/ScreenCutoutShader.shader.meta
+    - ProjectSettings/EditorBuildSettings.asset
     - ProjectSettings/TagManager.asset
     - 
-    m_Values: 0000000000000000000000000000000000000000000000000000
+    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

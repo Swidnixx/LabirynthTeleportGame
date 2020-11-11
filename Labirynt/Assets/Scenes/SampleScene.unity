@@ -133,13 +133,14 @@ GameObject:
   m_Component:
   - component: {fileID: 93927425}
   - component: {fileID: 93927427}
+  - component: {fileID: 93927426}
   m_Layer: 0
   m_Name: PortalCamera_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &93927425
 Transform:
   m_ObjectHideFlags: 0
@@ -154,6 +155,21 @@ Transform:
   m_Father: {fileID: 1399434119}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &93927426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93927424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180994b626b54174cbf3f61390448d26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 709841602}
+  portal: {fileID: 0}
+  otherPortal: {fileID: 275470691}
 --- !u!20 &93927427
 Camera:
   m_ObjectHideFlags: 0
@@ -187,7 +203,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: f598a1fbe0982de42be4e625e52ebe95, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -301,6 +317,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 275470691}
+  - component: {fileID: 275470692}
   m_Layer: 0
   m_Name: Portal_B
   m_TagString: Untagged
@@ -315,7 +332,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275470690}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 5.5, y: 1.26, z: -15.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -328,7 +345,25 @@ Transform:
   - {fileID: 384768350}
   m_Father: {fileID: 332381071}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &275470692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275470690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f62093722c3254fb4a91bad1394248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCamera: {fileID: 384768351}
+  player: {fileID: 403676435}
+  myRenderPlane: {fileID: 1961452069}
+  myCollidPlane: {fileID: 593301478}
+  otherPortal: {fileID: 1399434120}
+  material: {fileID: 2100000, guid: 6c063727d3bc80c4ba88967599d6c76c, type: 2}
 --- !u!1 &294907549
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,13 +698,14 @@ GameObject:
   m_Component:
   - component: {fileID: 384768350}
   - component: {fileID: 384768351}
+  - component: {fileID: 384768352}
   m_Layer: 0
   m_Name: PortalCamera_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &384768350
 Transform:
   m_ObjectHideFlags: 0
@@ -717,7 +753,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 9a699a5149ab0a8418360a0d7d04e8b1, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -727,6 +763,26 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &384768352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384768349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180994b626b54174cbf3f61390448d26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 709841602}
+  portal: {fileID: 0}
+  otherPortal: {fileID: 1399434119}
+--- !u!1 &403676435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3223035542410830648, guid: d03aaa57315070940b438e6891d9750d, type: 3}
+  m_PrefabInstance: {fileID: 3223035542125142535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &423341137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,7 +1119,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 22fee09b45f18194687d6a213b02b753, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1607,6 +1663,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 59.28, y: -44.649, z: -12.665}
+--- !u!4 &709841602 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3223035542811365235, guid: d03aaa57315070940b438e6891d9750d, type: 3}
+  m_PrefabInstance: {fileID: 3223035542125142535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &715891544
 GameObject:
   m_ObjectHideFlags: 0
@@ -2948,6 +3009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1399434119}
+  - component: {fileID: 1399434120}
   m_Layer: 0
   m_Name: Portal_A
   m_TagString: Untagged
@@ -2976,6 +3038,24 @@ Transform:
   m_Father: {fileID: 715891545}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1399434120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399434118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f62093722c3254fb4a91bad1394248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCamera: {fileID: 93927427}
+  player: {fileID: 403676435}
+  myRenderPlane: {fileID: 523792753}
+  myCollidPlane: {fileID: 1213463410}
+  otherPortal: {fileID: 275470692}
+  material: {fileID: 2100000, guid: 22fee09b45f18194687d6a213b02b753, type: 2}
 --- !u!1 &1460126737
 GameObject:
   m_ObjectHideFlags: 0
@@ -4226,7 +4306,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6c063727d3bc80c4ba88967599d6c76c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
