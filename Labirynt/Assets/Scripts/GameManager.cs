@@ -1,16 +1,58 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+public enum KeyColor
+{
+    Red,
+    Green,
+    Gold
+}
 
 public class GameManager : MonoBehaviour
 {
 
     public static GameManager gameManager;
+
+    public void AddKey(KeyColor color)
+    {
+        if (color == KeyColor.Gold)
+            goldKey++;
+        else if (color == KeyColor.Green)
+            greenKey++;
+        else if (color == KeyColor.Red)
+            redKey++;
+    }
+
     public int timeToEnd;
 
     private bool isPaused = false;
     private bool gameEnded = false;
     private bool gameWon = false;
+
+    public int points = 0;
+
+    public int redKey = 0;
+    public int greenKey = 0;
+    public int goldKey = 0;
+
+
+    public void AddPoints(int point)
+    {
+        points += point;
+    }
+
+    public void AddTime(int time)
+    {
+        timeToEnd += time;
+    }
+
+    public void FreezeTime( int freeze)
+    {
+        CancelInvoke("Stopper");
+        InvokeRepeating("Stopper", freeze, 1);
+    }
 
     private void EndGame()
     {

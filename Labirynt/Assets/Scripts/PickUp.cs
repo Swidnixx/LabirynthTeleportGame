@@ -4,21 +4,12 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-
-    public void Picked()
+    public virtual void Picked()
     {
-        Debug.Log("Podniesiono");
-        Destroy(this.gameObject);
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Rotation()
     {
-        
+        transform.Rotate(new Vector3(0, 5, 0));
     }
 }
