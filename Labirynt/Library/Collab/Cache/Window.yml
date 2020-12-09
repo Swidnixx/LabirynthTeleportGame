@@ -14,6 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/Animations.meta
+    - Assets/Animations/KeyActivationAnimation.anim
+    - Assets/Animations/KeyActivationAnimation.anim.meta
+    - Assets/Animations/KeyInactiveAnimation.anim
+    - Assets/Animations/KeyInactiveAnimation.anim.meta
+    - Assets/Animations/key.controller
+    - Assets/Animations/key.controller.meta
     - Assets/Materials.meta
     - Assets/Materials/Fast.mat
     - Assets/Materials/Fast.mat.meta
@@ -52,12 +59,16 @@ MonoBehaviour:
     - Assets/Scripts/Clock.cs.meta
     - Assets/Scripts/Crystal.cs
     - Assets/Scripts/Crystal.cs.meta
+    - Assets/Scripts/Door.cs
+    - Assets/Scripts/Door.cs.meta
     - Assets/Scripts/Freeze.cs
     - Assets/Scripts/Freeze.cs.meta
     - Assets/Scripts/GameManager.cs
     - Assets/Scripts/GameManager.cs.meta
     - Assets/Scripts/Key.cs
     - Assets/Scripts/Key.cs.meta
+    - Assets/Scripts/Lock.cs
+    - Assets/Scripts/Lock.cs.meta
     - Assets/Scripts/PickUp.cs
     - Assets/Scripts/PickUp.cs.meta
     - Assets/Scripts/PlayerController.cs
@@ -74,7 +85,7 @@ MonoBehaviour:
     - ProjectSettings/EditorBuildSettings.asset
     - ProjectSettings/TagManager.asset
     - 
-    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

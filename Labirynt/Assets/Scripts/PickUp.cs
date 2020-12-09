@@ -10,6 +10,7 @@ public class PickUp : MonoBehaviour
 
     public void Rotation()
     {
-        transform.Rotate(new Vector3(0, 5, 0));
+        transform.RotateAround(Vector3.up, 0.5f);
+       // transform.Rotate(new Vector3(0, 5, 0));
     }
 }
