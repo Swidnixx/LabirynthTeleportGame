@@ -44,29 +44,40 @@ MonoBehaviour:
     - Assets/Models/key.fbx.meta
     - Assets/Models/snowflake.fbx
     - Assets/Models/snowflake.fbx.meta
+    - Assets/New Piskel.png
+    - Assets/New Piskel.png.meta
     - Assets/Prefabs.meta
     - Assets/Prefabs/Fast.prefab
     - Assets/Prefabs/Fast.prefab.meta
+    - Assets/Prefabs/PlaneRegular.prefab
+    - Assets/Prefabs/PlaneRegular.prefab.meta
     - Assets/Prefabs/Player.prefab
     - Assets/Prefabs/Player.prefab.meta
     - Assets/Prefabs/Slow.prefab
     - Assets/Prefabs/Slow.prefab.meta
+    - Assets/Prefabs/WallPrefab.prefab
+    - Assets/Prefabs/WallPrefab.prefab.meta
     - Assets/Scenes/SampleScene.unity
-    - Assets/Scripts.meta
     - Assets/Scripts/CameraController.cs
     - Assets/Scripts/CameraController.cs.meta
     - Assets/Scripts/Clock.cs
     - Assets/Scripts/Clock.cs.meta
+    - Assets/Scripts/ColorToPrefab.cs
+    - Assets/Scripts/ColorToPrefab.cs.meta
     - Assets/Scripts/Crystal.cs
     - Assets/Scripts/Crystal.cs.meta
     - Assets/Scripts/Door.cs
     - Assets/Scripts/Door.cs.meta
+    - Assets/Scripts/EditorButton.cs
+    - Assets/Scripts/EditorButton.cs.meta
     - Assets/Scripts/Freeze.cs
     - Assets/Scripts/Freeze.cs.meta
     - Assets/Scripts/GameManager.cs
     - Assets/Scripts/GameManager.cs.meta
     - Assets/Scripts/Key.cs
     - Assets/Scripts/Key.cs.meta
+    - Assets/Scripts/LevelGenerator.cs
+    - Assets/Scripts/LevelGenerator.cs.meta
     - Assets/Scripts/Lock.cs
     - Assets/Scripts/Lock.cs.meta
     - Assets/Scripts/PickUp.cs
@@ -85,7 +96,7 @@ MonoBehaviour:
     - ProjectSettings/EditorBuildSettings.asset
     - ProjectSettings/TagManager.asset
     - 
-    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
