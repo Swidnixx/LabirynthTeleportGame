@@ -15,6 +15,12 @@ public class GameManager : MonoBehaviour
 
     public static GameManager gameManager;
 
+    AudioSource audioSource;
+    public AudioClip resumeClip;
+    public AudioClip pauseClip;
+    public AudioClip winClip;
+    public AudioClip loseClip;
+
     public void AddKey(KeyColor color)
     {
         if (color == KeyColor.Gold)
@@ -61,22 +67,27 @@ public class GameManager : MonoBehaviour
         if(gameWon)
         {
             Debug.Log("You win!");
+            PlayClip(winClip);
         }
         else
         {
             Debug.Log("You lose!");
+            PlayClip(loseClip);
         }
     }
 
     private void PauseGame()
     {
+        PlayClip(pauseClip);
         Debug.Log("Game Paused");
         isPaused = true;
         Time.timeScale = 0f;
+
     }
 
     private void ResumeGame()
     {
+        PlayClip(resumeClip);
         Debug.Log("Game Resumed");
         isPaused = false;
         Time.timeScale = 1f;
@@ -94,7 +105,15 @@ public class GameManager : MonoBehaviour
             timeToEnd = 100;
         }
 
+        audioSource = GetComponent<AudioSource>();
+
         InvokeRepeating("Stopper", 2, 1);
+    }
+
+    public void PlayClip(AudioClip playClip)
+    {
+        audioSource.clip = playClip;
+        audioSource.Play();
     }
 
     // Update is called once per frame

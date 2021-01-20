@@ -9,6 +9,7 @@ public class Clock : PickUp
 
     public override void Picked()
     {
+        GameManager.gameManager.PlayClip(pickUpClip);
         if (addTime)
             GameManager.gameManager.AddTime((int)time);
         else

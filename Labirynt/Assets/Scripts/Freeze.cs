@@ -9,6 +9,7 @@ public class Freeze : PickUp
     {
         GameManager.gameManager.FreezeTime(freezeTime);
         Destroy(this.gameObject);
+        GameManager.gameManager.PlayClip(pickUpClip);
     }
 
     void Update()

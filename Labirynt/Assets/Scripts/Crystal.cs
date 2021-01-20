@@ -7,6 +7,7 @@ public class Crystal : PickUp
     public int points = 5;
     public override void Picked()
     {
+        GameManager.gameManager.PlayClip(pickUpClip);
         GameManager.gameManager.AddPoints(points);
         Destroy(this.gameObject);
     }
