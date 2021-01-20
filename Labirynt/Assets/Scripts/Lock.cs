@@ -19,6 +19,7 @@ public class Lock : MonoBehaviour
         {
             d.OpenClose();
         }
+        animator.SetBool("useKey", false);
     }
 
     bool iCanOpen = false;
@@ -40,10 +41,43 @@ public class Lock : MonoBehaviour
         }
     }
 
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.E) && iCanOpen && !locked)
+        {
+            animator.SetBool("useKey", CheckTheKey());
+          
+            
+        }
     }
+
+    public bool CheckTheKey()
+    {
+        if (GameManager.gameManager.redKey > 0 && myColor == KeyColor.Red)
+        {
+            GameManager.gameManager.redKey--;
+            locked = true;
+            return true;
+        }
+        else if (GameManager.gameManager.greenKey > 0 && myColor == KeyColor.Green)
+        {
+            GameManager.gameManager.greenKey--;
+            locked = true;
+            return true;
+        }
+        else if (GameManager.gameManager.goldKey > 0 && myColor == KeyColor.Gold)
+        {
+            GameManager.gameManager.goldKey--;
+            locked = true;
+            return true;
+        }
+        else
+        {
+            Debug.Log("Nie masz klucza!");
+            return false;
+        }
+    }
+
+
+
 }

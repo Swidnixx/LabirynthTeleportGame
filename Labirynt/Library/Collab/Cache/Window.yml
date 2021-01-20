@@ -21,6 +21,91 @@ MonoBehaviour:
     - Assets/Animations/KeyInactiveAnimation.anim.meta
     - Assets/Animations/key.controller
     - Assets/Animations/key.controller.meta
+    - Assets/Customizable Skybox.meta
+    - Assets/Customizable Skybox/Materials.meta
+    - Assets/Customizable Skybox/Materials/Clouds.mat
+    - Assets/Customizable Skybox/Materials/Clouds.mat.meta
+    - Assets/Customizable Skybox/Materials/Material.003.mat
+    - Assets/Customizable Skybox/Materials/Material.003.mat.meta
+    - Assets/Customizable Skybox/Materials/No Name.mat
+    - Assets/Customizable Skybox/Materials/No Name.mat.meta
+    - Assets/Customizable Skybox/Materials/dark trunk.mat
+    - Assets/Customizable Skybox/Materials/dark trunk.mat.meta
+    - Assets/Customizable Skybox/Materials/darken leafs.mat
+    - Assets/Customizable Skybox/Materials/darken leafs.mat.meta
+    - Assets/Customizable Skybox/Materials/earth.mat
+    - Assets/Customizable Skybox/Materials/earth.mat.meta
+    - Assets/Customizable Skybox/Materials/green tree.mat
+    - Assets/Customizable Skybox/Materials/green tree.mat.meta
+    - Assets/Customizable Skybox/Materials/pine tree green.mat
+    - Assets/Customizable Skybox/Materials/pine tree green.mat.meta
+    - Assets/Customizable Skybox/Materials/trunk.mat
+    - Assets/Customizable Skybox/Materials/trunk.mat.meta
+    - Assets/Customizable Skybox/Model.meta
+    - Assets/Customizable Skybox/Model/Materials.meta
+    - Assets/Customizable Skybox/Model/Materials/Material.003.mat
+    - Assets/Customizable Skybox/Model/Materials/Material.003.mat.meta
+    - Assets/Customizable Skybox/Model/Materials/No Name.mat
+    - Assets/Customizable Skybox/Model/Materials/No Name.mat.meta
+    - Assets/Customizable Skybox/Model/Materials/dark trunk.mat
+    - Assets/Customizable Skybox/Model/Materials/dark trunk.mat.meta
+    - Assets/Customizable Skybox/Model/Materials/darken leafs.mat
+    - Assets/Customizable Skybox/Model/Materials/darken leafs.mat.meta
+    - Assets/Customizable Skybox/Model/Materials/earth.mat
+    - Assets/Customizable Skybox/Model/Materials/earth.mat.meta
+    - Assets/Customizable Skybox/Model/Materials/green tree.mat
+    - Assets/Customizable Skybox/Model/Materials/green tree.mat.meta
+    - Assets/Customizable Skybox/Model/Materials/pine brown.mat
+    - Assets/Customizable Skybox/Model/Materials/pine brown.mat.meta
+    - Assets/Customizable Skybox/Model/Materials/pine tree green.mat
+    - Assets/Customizable Skybox/Model/Materials/pine tree green.mat.meta
+    - Assets/Customizable Skybox/Model/Materials/trunk.mat
+    - Assets/Customizable Skybox/Model/Materials/trunk.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Day1.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Day1.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Day2.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Day2.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Day3.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Day3.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Day4.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Day4.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Day5.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Day5.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Day6.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Day6.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Day7.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Day7.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Morning1.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Morning1.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Morning2.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Morning2.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Morning3.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Morning3.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Morning4.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Morning4.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Night1.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Night1.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Night2.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Night2.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Night3.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Night3.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Night4.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Night4.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Sunset1.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Sunset1.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Sunset2.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Sunset2.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Sunset3.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Sunset3.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Sunset4.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Sunset4.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Sunset5.mat
+    - Assets/Customizable Skybox/Stylized Sky/Materials/Sunset5.mat.meta
+    - Assets/Customizable Skybox/Stylized Sky/Shaders.meta
+    - Assets/Customizable Skybox/Stylized Sky/Shaders/Stylized Sky.shader
+    - Assets/Customizable Skybox/Stylized Sky/Shaders/Stylized Sky.shader.meta
     - Assets/Materials.meta
     - Assets/Materials/Fast.mat
     - Assets/Materials/Fast.mat.meta
@@ -35,6 +120,11 @@ MonoBehaviour:
     - Assets/Materials/Textures/TextureA.renderTexture.meta
     - Assets/Materials/Textures/TextureB.renderTexture
     - Assets/Materials/Textures/TextureB.renderTexture.meta
+    - Assets/Materials/WallMaterial.meta
+    - Assets/Materials/WallMaterial/Mat01.mat
+    - Assets/Materials/WallMaterial/Mat01.mat.meta
+    - Assets/Materials/WallMaterial/Mat02.mat
+    - Assets/Materials/WallMaterial/Mat02.mat.meta
     - Assets/Models.meta
     - Assets/Models/clock.fbx
     - Assets/Models/clock.fbx.meta
@@ -47,17 +137,32 @@ MonoBehaviour:
     - Assets/New Piskel.png
     - Assets/New Piskel.png.meta
     - Assets/Prefabs.meta
+    - Assets/Prefabs/DoorMechanim.prefab
+    - Assets/Prefabs/DoorMechanim.prefab.meta
     - Assets/Prefabs/Fast.prefab
     - Assets/Prefabs/Fast.prefab.meta
     - Assets/Prefabs/PlaneRegular.prefab
     - Assets/Prefabs/PlaneRegular.prefab.meta
     - Assets/Prefabs/Player.prefab
     - Assets/Prefabs/Player.prefab.meta
+    - Assets/Prefabs/Portal_A.prefab
+    - Assets/Prefabs/Portal_A.prefab.meta
+    - Assets/Prefabs/Portal_B.prefab
+    - Assets/Prefabs/Portal_B.prefab.meta
     - Assets/Prefabs/Slow.prefab
     - Assets/Prefabs/Slow.prefab.meta
     - Assets/Prefabs/WallPrefab.prefab
     - Assets/Prefabs/WallPrefab.prefab.meta
+    - Assets/Prefabs/clockMinus.prefab
+    - Assets/Prefabs/clockMinus.prefab.meta
+    - Assets/Prefabs/clockPlus.prefab
+    - Assets/Prefabs/clockPlus.prefab.meta
+    - Assets/Prefabs/diamond.prefab
+    - Assets/Prefabs/diamond.prefab.meta
+    - Assets/Prefabs/snowflake.prefab
+    - Assets/Prefabs/snowflake.prefab.meta
     - Assets/Scenes/SampleScene.unity
+    - Assets/Scripts.meta
     - Assets/Scripts/CameraController.cs
     - Assets/Scripts/CameraController.cs.meta
     - Assets/Scripts/Clock.cs
@@ -93,10 +198,12 @@ MonoBehaviour:
     - Assets/Shaders.meta
     - Assets/Shaders/ScreenCutoutShader.shader
     - Assets/Shaders/ScreenCutoutShader.shader.meta
+    - Packages/manifest.json
+    - Packages/packages-lock.json
     - ProjectSettings/EditorBuildSettings.asset
     - ProjectSettings/TagManager.asset
     - 
-    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

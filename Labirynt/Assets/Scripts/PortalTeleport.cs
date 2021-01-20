@@ -56,6 +56,6 @@ public class PortalTeleport : MonoBehaviour
         Debug.DrawLine(transform.position, player.position);
         Vector3 portalToPlayerDistance = player.position - transform.position;
         float dotProduct = Vector3.Dot(transform.up, portalToPlayerDistance);
-        Debug.Log("Dot: " + dotProduct);
+        //Debug.Log("Dot: " + dotProduct);
     }
 }

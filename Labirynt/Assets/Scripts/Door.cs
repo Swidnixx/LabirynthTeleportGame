@@ -35,4 +35,6 @@ public class Door : MonoBehaviour
             door.position = Vector3.MoveTowards(door.position, openPosition.position, Time.deltaTime * closingSpeed);
         }
     }
+
+
 }

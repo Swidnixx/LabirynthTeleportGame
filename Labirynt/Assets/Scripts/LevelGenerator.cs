@@ -8,9 +8,30 @@ public class LevelGenerator : MonoBehaviour
     public Texture2D map;
     public float offset = 5;
 
+    public Material material01;
+    public Material material02;
+
     void Start()
     {
         GenerateLabirynth();
+    }
+
+    public void ColorTheChildren()
+    {
+        foreach(Transform child in transform)
+        {
+            if(child.tag == "Wall")
+            {
+                if(Random.Range(1,100) % 3 == 0)
+                {
+                    child.gameObject.GetComponent<Renderer>().material = material02;
+                }
+                else
+                {
+                    child.gameObject.GetComponent<Renderer>().material = material01;
+                }
+            }
+        }
     }
 
     void GenerateTile(int x, int z)
@@ -25,7 +46,7 @@ public class LevelGenerator : MonoBehaviour
             if(mapping.color.Equals(pixelColor))
             {
                 Vector3 position = new Vector3(x, 0, z) * offset;
-                Instantiate(mapping.prefab, position, Quaternion.identity);
+                Instantiate( mapping.prefab, position, Quaternion.identity, transform);
             }
         }
     }
@@ -39,6 +60,8 @@ public class LevelGenerator : MonoBehaviour
                 GenerateTile(x, z);
             }
         }
+
+        ColorTheChildren();
     }
 
 }

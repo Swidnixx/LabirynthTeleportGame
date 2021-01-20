@@ -70,8 +70,9 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    private void OnControllerColliderHit(ControllerColliderHit hit)
+    private void OnTriggerEnter(Collider hit)
     {
+        Debug.Log("test");
         if(hit.gameObject.tag == "PickUp")
         {
             hit.gameObject.GetComponent<PickUp>().Picked();
