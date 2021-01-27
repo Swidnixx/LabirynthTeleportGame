@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum KeyColor
 {
@@ -12,6 +13,17 @@ public enum KeyColor
 
 public class GameManager : MonoBehaviour
 {
+    public Text timeText;
+    public Text goldKeyText;
+    public Text redKeyText;
+    public Text greenKeyText;
+    public Text crystalText;
+
+    public Image snowFlake;
+    public GameObject infoPanel;
+
+    public Text useKeyText;
+
 
     public static GameManager gameManager;
 
@@ -24,11 +36,20 @@ public class GameManager : MonoBehaviour
     public void AddKey(KeyColor color)
     {
         if (color == KeyColor.Gold)
+        {
             goldKey++;
+            goldKeyText.text = goldKey.ToString();
+        }
         else if (color == KeyColor.Green)
+        {
             greenKey++;
+            greenKeyText.text = greenKey.ToString();
+        }
         else if (color == KeyColor.Red)
+        {
             redKey++;
+            redKeyText.text = redKey.ToString();
+        }
     }
 
     public int timeToEnd;
@@ -47,22 +68,26 @@ public class GameManager : MonoBehaviour
     public void AddPoints(int point)
     {
         points += point;
+        crystalText.text = points.ToString();
     }
 
     public void AddTime(int time)
     {
         timeToEnd += time;
+        timeText.text = timeText.ToString();
     }
 
     public void FreezeTime( int freeze)
     {
         CancelInvoke("Stopper");
+        snowFlake.enabled = true;
         InvokeRepeating("Stopper", freeze, 1);
     }
 
     private void EndGame()
     {
         CancelInvoke("Stopper");
+        infoPanel.SetActive(true);
 
         if(gameWon)
         {
@@ -78,19 +103,27 @@ public class GameManager : MonoBehaviour
 
     private void PauseGame()
     {
-        PlayClip(pauseClip);
-        Debug.Log("Game Paused");
-        isPaused = true;
-        Time.timeScale = 0f;
+        if (gameEnded)
+        {
+            PlayClip(pauseClip);
+            infoPanel.SetActive(true);
+            Debug.Log("Game Paused");
+            isPaused = true;
+            Time.timeScale = 0f; 
+        }
 
     }
 
     private void ResumeGame()
     {
-        PlayClip(resumeClip);
-        Debug.Log("Game Resumed");
-        isPaused = false;
-        Time.timeScale = 1f;
+        if (gameEnded)
+        {
+            PlayClip(resumeClip);
+            infoPanel.SetActive(false);
+            Debug.Log("Game Resumed");
+            isPaused = false;
+            Time.timeScale = 1f; 
+        }
     }
     // Start is called before the first frame update
     void Start()
@@ -104,6 +137,10 @@ public class GameManager : MonoBehaviour
         {
             timeToEnd = 100;
         }
+
+        snowFlake.enabled = false;
+        timeText.text = timeToEnd.ToString();
+        infoPanel.SetActive(false);
 
         audioSource = GetComponent<AudioSource>();
 
@@ -131,6 +168,8 @@ public class GameManager : MonoBehaviour
     void Stopper()
     {
         timeToEnd--;
+        timeText.text = timeToEnd.ToString();
+        snowFlake.enabled = false;
         //Debug.Log("Time: " + timeToEnd + " s");
 
         if(timeToEnd <= 0)

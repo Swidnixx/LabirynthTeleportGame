@@ -20,6 +20,8 @@ public class Lock : MonoBehaviour
             d.OpenClose();
         }
         animator.SetBool("useKey", false);
+
+        GameManager.gameManager.useKeyText.text = "";
     }
 
     bool iCanOpen = false;
@@ -43,11 +45,14 @@ public class Lock : MonoBehaviour
 
     private void Update()
     {
+         if(iCanOpen && !locked)
+        {
+            GameManager.gameManager.useKeyText.text = "You can use key by pressing E";
+        }
+
         if (Input.GetKeyDown(KeyCode.E) && iCanOpen && !locked)
         {
             animator.SetBool("useKey", CheckTheKey());
-          
-            
         }
     }
 
